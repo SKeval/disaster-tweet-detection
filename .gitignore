@@ -1,0 +1,22 @@
+# Model folders
+models/
+checkpoints/
+
+# Large ML files
+*.safetensors
+*.pt
+*.bin
+*.pkl
+*.h5
+
+# Data
+data/
+*.csv
+
+# Python
+__pycache__/
+venv/
+.ipynb_checkpoints/
+
+# System
+.DS_Store
