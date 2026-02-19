@@ -38,6 +38,8 @@ Social media platforms, particularly Twitter, are crucial sources of real-time i
 - **Contextual embeddings** that understand nuanced language
 - **Transfer learning** for improved performance with limited labeled data
 
+The core challenge here — extracting a reliable signal from noisy, ambiguous text — is domain-agnostic. The same BERT-based classification architecture applies directly to clinical NLP tasks: distinguishing real patient alerts from routine documentation, flagging safety-critical events in hospital logs, or routing medical queries to the right knowledge base.
+
 ### Problem Statement
 
 Given a tweet, classify whether it refers to a real disaster or not. The challenge lies in understanding context, as the same words can mean different things:
@@ -123,7 +125,7 @@ model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_l
 | Accuracy | 84.5% |
 | Precision | 83.2% |
 | Recall | 82.8% |
-| F1-Score | 83.0% |
+| F1-Score | 81.5% |
 
 ## 💻 Usage
 
